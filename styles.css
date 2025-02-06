@@ -1,0 +1,556 @@
+.welcome h1{
+font-weight:200px;
+font-size:3rem;
+}
+.welcome p{
+    font-size: 20px;
+    position: absolute;
+    top:10%;
+}
+
+/* useless */
+/* .site-nav ul{
+        display: flex;
+        grid-column: 6/9;
+        justify-content: flex-end;
+        align-self: center;
+        position: absolute;
+        top:40px;
+        right: 20px;
+        text-align: center;
+    } */
+
+
+
+
+.site-nav li{
+        margin-left: 20px;
+        list-style-type: none;
+        text-decoration: none;
+       
+      
+    }
+nav,select,li{
+    border: none;
+    padding: 0;
+    
+    
+} 
+
+
+/* useless */
+/* nav,select,li{
+    margin-right:7;
+    text-decoration: none;
+    font-size:15px;
+
+} */
+
+
+
+ .menu-open{
+position: absolute;
+top:5%;
+right: 9px;
+
+}
+nav ul{
+    background:rgb(214, 209, 209);
+    position:fixed;
+    z-index: 999;
+    top:0;
+    right:0;
+    height: 100vh;
+    margin: 0;
+    width: 30%;
+    text-align: right;
+    padding: 2em;
+    transform: translateX(100%);
+    transition: transform 0.5s ease-in-out;
+
+}
+li{
+    margin: 1em 0;
+    &:nth-of-type(1) {
+        margin-bottom: 4em;
+    }
+}
+.open {
+    transform: translateX(0%);
+}
+
+#items{
+    display:grid;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.shoes-collection{
+    width: 530px;
+    height: auto;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 6px 6px 6px rgba(0, 0, 0, 0);
+}
+.discount-section{
+    text-align: center;
+    background-color:rgb(214, 209, 209);
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0,0, 0, 0.1);
+    width: 90%;
+    max-width: 600px;
+}
+.discount-section h1{
+    font-size: 24px;
+    margin: 0;
+    color: #333333;
+}
+.discount-section p{
+    font-size:16px;
+    margin:10px 0 20px;
+    color: #666666;
+}
+.email-button{
+    background-color: #000000;
+    color: #ffffff;
+    border: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-colour 0.3s ease;
+    
+}
+.email-button:hover{
+    background-color: #ff0000;
+    transform: scale(1.1);
+}
+.header{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.header h2{
+    margin: 0;
+    font-size: 1.6rem;
+}
+.header a{
+    text-decoration: none;
+    color: blue;
+    font-size: 1rem;
+} 
+
+
+
+
+/* useless */
+/* #cartigories .product-card{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap
+} */
+
+
+
+
+.product-card{
+    text-align: center;
+    
+}
+.product-card img{
+    width: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+}
+.product-card h3{
+    margin: 10px 0 5px;
+    font-size: 1rem;
+    
+}
+.product-card span{
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: black;
+    
+}
+.space{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.product-card h2{
+    margin: 0;
+    font-size: 1.5rem;
+    color:black;
+    text-decoration: none;
+    
+
+}
+.product-card span{
+    text-decoration: none;
+    font-size: 1.5rem;
+    color:black;
+    font-size: bold;
+}
+.box img{
+    width: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+    gap: 20px;
+   
+}
+.latest{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.latest h2{
+    margin: 0;
+    font-size: 1.6rem;
+}
+.latest a{
+    text-decoration: none;
+    color: blue;
+    font-size: 1rem;
+}
+.Running{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    text-decoration: none;
+}
+.fashion-shoes h2{
+    margin: 0;
+    font-size: 1.5rem;
+    color:black;
+    text-decoration: none;
+    
+}
+.fashion-shoes span{
+    text-decoration: none;
+    font-size: 1.5rem;
+    color:black;
+    font-size: bold;
+   
+} 
+
+@media (min-width: 798px) 
+{
+    /* nav ul{
+        position: unset;
+        background: none;
+        display: flex;
+        gap: 2em;
+        height: auto;
+        width: auto;
+        transform: translateX(0%);
+        
+        li a {
+            font-size: 1.2rem;
+        }
+    } */
+    /* .site-nav{
+        
+        flex-direction: column;
+        position: absolute;
+        top: 10px;
+        right: 0;
+        background: white;
+       
+        padding: 10px;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0,0.1) ;
+
+    } */
+#items{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding: 20px;
+}
+#items img{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.discount-section{
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    width: 100%;
+    height:100%;
+}
+.product-card{
+    display: flex;
+    gap: 20px;
+   
+    justify-content: center;
+}
+.product-card h2{
+    font-size: 1rem;
+    gap: 30px;  
+}
+.product-card span{
+    font-size:1rem;
+    font-weight: bold;
+}
+
+.product-card img{
+    width:100%;
+    margin-bottom: 20px;
+   
+}
+.box{
+    display: flex;
+    width:50%;
+    gap: 20px;
+   
+}
+.fashion-shoes{
+    display: flex;
+    gap: 20px;
+   
+   
+    justify-content: center; 
+}
+.fashion-shoes h2{
+    font-size: 1rem;
+    gap: 30px;  
+    display: inline;
+  
+}
+.fashion-shoes span{
+    font-size:1rem;
+    font-weight: bold;
+   
+}
+.fashion-shoes  img{
+    width:100%;
+    margin-bottom: 20px;
+    
+
+   
+   
+}
+.info{
+    display: block;
+      
+    
+}
+.information{
+  gap: 80px;
+  /* width: 90%;
+  max-width: 1200px; */
+  /* margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; */
+}
+nav ul {
+    position: unset;
+    background: none;
+    display: flex;
+    gap: 2em;
+    height: auto;
+    width: auto;
+    transform: translateX(0%);
+   
+    li a {
+        font-size: 1.2rem;
+       
+    }
+}
+.hide-desktop {
+    display: none;
+}
+
+}
+
+
+
+
+
+
+@media (min-width: 950px)
+{
+    .info{
+        display: block;
+          
+        
+    }
+    .hide-desktop {
+        display: none;
+    }
+}
+
+@media (min-width: 1200px)
+{  
+#items{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding: 20px;
+}
+#items img{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.discount-section{
+    width:80%;
+    max-width: 1000px;
+    height:200px;
+    display: flex;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    justify-content: space-between;
+    align-items:center;
+
+}
+.discount-section button{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.email-button{
+    padding: 10px 30px;
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.3s;
+    margin-left: 800px;
+    margin-top: -100px;
+}
+.discount-section h1{
+    font-size:35px;
+    margin-bottom: 10px;
+    margin-left: -600px;
+}
+.discount-section p{
+    font-size:24px;
+    margin-left: -600px;
+
+}
+.discount-section{
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+   
+}
+.discount-section h1,p{
+    width: 100%;
+    padding: 20px;
+}
+
+
+.product-card{
+    display: flex;
+    gap: 30px;
+    
+   
+    justify-content: center;
+}
+.product-card h2{
+    font-size: 1.1rem;
+    gap: 30px;  
+}
+.product-card span{
+    font-size:1.5rem;
+    font-weight: bold;
+}
+
+.product-card img{
+    width:100%;
+    margin-bottom: 20px;
+   
+}
+.box{
+    display: flex;
+    width:50%;
+    gap: 20px;
+   
+}
+.fashion-shoes{
+    display: flex;
+    gap: 30px;
+    
+   
+   
+    justify-content: center; 
+}
+.fashion-shoes h2{
+    font-size: 1.1rem;
+    gap: 30px; 
+     
+   
+}
+.fashion-shoes span{
+    font-size:1.5rem;
+    font-weight: bold;
+   
+}
+.fashion-shoes a{
+text-decoration: none;
+}
+.product-card a{
+    text-decoration: none;
+}
+.fashion-shoes  img{
+    width:100%;
+    margin-bottom: 20px;
+   
+   
+}
+
+.information{
+    background: #f7f5f5;
+    padding: 20px;
+    justify-content: space-between;
+    display: flex;
+    /* width: 90%; */
+    /* max-width: 1200px; */
+   
+
+  }
+}
+.info{
+    flex: 1;
+    margin: 0 10px;
+}
+.info h3{
+    margin-bottom: 10px;
+    font-size: 20px; 
+}
+.info ul{
+    list-style: none;
+}
+.info ul li{
+    margin-bottom:20px;
+    font-size: 16px;
+    margin-left: -40px;
+}
+
+footer{
+    padding: 30px 20px;
+}
+footer h2{
+    grid-column: 7/9;
+    display: flex;
+    justify-content: end;
+}
+.hide-desktop {
+    display: none;
+}
+
+  
+
